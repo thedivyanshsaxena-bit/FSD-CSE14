@@ -1,3 +1,6 @@
+// synchronus call
+// java script is synchronus and single threaded(do one work at a time)
+
 function f1 (){
     console.log('f1 start');
     f2();
