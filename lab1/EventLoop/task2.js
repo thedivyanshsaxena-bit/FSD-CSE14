@@ -7,7 +7,8 @@ const f2=()=>{
  const main=()=>{
     console.log("main");
     setTimeout(f1, 5000);
-    setTimeout(f2,0)  // 0 sec is also a time so it execute later
+    //setTimeout(f2,0)  // 0 sec is also a time so it execute later
+    setInterval(f2,1000)
     f2();
     console.log("end");
  };
