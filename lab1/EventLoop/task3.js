@@ -3,7 +3,7 @@ setTimeout(()=>{
     console.log("2: setTimeout")
 },0);
 setImmediate(()=>{
-    console.log("3: setImmediate")    // immedate timeou changed some time due to processor load
+    console.log("3: setImmediate")    // immedate and timeout changed some time due to processor load
 });
 process.nextTick(()=>{
     console.log("4: nextTick")
