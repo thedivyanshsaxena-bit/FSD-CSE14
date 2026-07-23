@@ -8,7 +8,8 @@ const f2=()=>{
     console.log("main");
     setTimeout(f1, 5000);
     //setTimeout(f2,0)  // 0 sec is also a time so it execute later
-    setInterval(f2,1000)
+   // setInterval(f2,1000)
+   setImmediate(f2);      // it take setimmediate first than setTimeout
     f2();
     console.log("end");
  };
