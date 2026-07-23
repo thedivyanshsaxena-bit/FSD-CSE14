@@ -26,3 +26,7 @@ function main(){
     console.log("end main");
 }
 main();
+
+// in asynchronous call we use event loop to manage the call stack
+
+// asynchronus call using timers  set timeout, set immediate,process.next tick, set interval
