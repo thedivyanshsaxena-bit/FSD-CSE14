@@ -1,4 +1,4 @@
-import { writeFile, readFile } from 'fs/promises';
+import { writeFile, readFile, appendFile } from 'fs/promises';
 /*const data= await readFile("stud.txt","utf-8");   // if we dont write await so it shows object promise as it takes some time so we have to use await
 console.log(`file contents: ${data}`)*/
 
@@ -28,5 +28,11 @@ console.log(`file contents: ${data}`)*/
     const data= await readFile(fname,'utf-8')
     return data;
 };
+const appendData=async(fname,content)=>{
+    await appendFile(fname,"\n"+content);
+    console.log("data appended");
+}
 await addContent("notes.txt","FS is easy in JS")
 console.log("contents\n",await readcontent("notes.txt"))
+await appendData('notes.txt',"it can add ,read and update content");
+console.log(" updated contents\n",await readcontent("notes.txt"))
