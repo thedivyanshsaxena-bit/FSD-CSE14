@@ -1,0 +1,13 @@
+{
+  "name": "lab3",
+  "version": "1.0.0",
+  "description": "HTTP->Hyper Text Transfer Protocol\r HTML->Hyper Text Markup Language\r CSS->Cascading Style Sheet",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
