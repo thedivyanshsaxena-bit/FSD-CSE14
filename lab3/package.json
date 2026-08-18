@@ -4,7 +4,8 @@
   "description": "HTTP->Hyper Text Transfer Protocol\r HTML->Hyper Text Markup Language\r CSS->Cascading Style Sheet",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "dev":"nodemon app.js"
   },
   "keywords": [],
   "author": "",
