@@ -19,3 +19,21 @@ NPM->Node Package Manager
 401->Unauthorized
 403->Forbidden
 404->Not Found
+
+# Content Type
+
+Content-Type in JavaScript is an HTTP header that tells the browser or server what type of data is being sent.
+
+# common Content Types
+
+| Content-Type             | Used for         |
+| ------------------------ | ---------------- |
+| `text/html`              | HTML pages       |
+| `text/plain`             | Plain text       |
+| `application/json`       | JSON data        |
+| `text/css`               | CSS files        |
+| `application/javascript` | JavaScript files |
+| `image/jpeg`             | JPG images       |
+| `image/png`              | PNG images       |
+| `image/webp`             | WebP images      |
+| `application/pdf`        | PDF files        |
