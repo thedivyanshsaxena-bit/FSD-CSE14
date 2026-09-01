@@ -9,7 +9,7 @@ const server = http.createServer(async (req, res) => {
          });
          stream.pipe(res);            // to create pipeline between stream and response
     }
-    else if(req.url==="/mobile"){
+    else if(req.url==="/mobile"){      // "/mobile" and "/manual" are routs
         res.writeHead(200,{
             "Content-type":"text/json"});
         const stream=createReadStream("./data/products.json",{
