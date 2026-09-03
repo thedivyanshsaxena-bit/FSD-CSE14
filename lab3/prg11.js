@@ -26,7 +26,6 @@ const server = http.createServer((req, res) => {
 
     req.on("end",()=>{
       const product=JSON.parse(body);
-    });
 
     // add data to database
     res.writeHead(201,{
@@ -37,11 +36,11 @@ const server = http.createServer((req, res) => {
     res.end(
       JSON.stringify({
         msg:"Product Added",
-        product:product,
+        products,
       }),
     );
     //
-    res.end("Add Product");
+    });
   }
   else if (req.url === "/products" && req.method === "PUT"){
     res.end("Update Product");
